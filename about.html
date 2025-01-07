@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Journey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">im</a>
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="about" class="container">
+      <img src="image/image4.jpg" alt="Decoration Image" />
+      <h1>We Found Love</h1>
+      <p class="quote">
+        Jadi, awal kenal tuh di game. Ngk ada yang spesial sih, cuma main
+        bareng, ngobrol seadanya. Tapi lama-lama makin sering komunikasi, terus
+        jadi makin deket deh. Ngk ada yang direncanain, pokoknya ngalir gitu
+        aja. Terus, tanggal 23 Mei 2023, kita mutusin buat jadian deh. Mungkin
+        kelihatannya aneh ya, hubungan yang awalnya dari game, bisa jadi nyata.
+        tapi justru itu yang bikin unik. Game yang awalnya cuma hiburan sekarang
+        jadi awal dari cerita kisah kita. Kadang cinta tuh bisa datang dari
+        tempat yang ngk terduga. Kalau dipikir-pikir, lucu juga sih, tapi ya
+        itu, semua berawal dari hal sesimpel itu. wkwk
+      </p>
+      <div class="separator">
+        <span>•••</span>
+      </div>
+      <div class="countdown">
+        <div class="time-box"><span id="days">0</span><br />Hari</div>
+        <div class="time-box"><span id="hours">0</span><br />Jam</div>
+        <div class="time-box"><span id="minutes">0</span><br />Menit</div>
+        <div class="time-box"><span id="seconds">0</span><br />Detik</div>
+      </div>
+    </div>
+
+    <div id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="image/photo1.jpg" alt="Photo 1" />
+        <img src="image/photo2.jpg" alt="Photo 2" />
+        <img src="image/photo3.jpg" alt="Photo 3" />
+        <img src="image/photo4.jpg" alt="Photo 4" />
+        <img src="image/photo5.jpg" alt="Photo 5" />
+        <img src="image/photo6.jpg" alt="Photo 6" />
+        <img src="image/photo7.jpg" alt="Photo 7" />
+        <img src="image/photo8.jpg" alt="Photo 8" />
+      </div>
+    </div>
+
+    <div id="projects" class="projects">
+      <h2>Love Compatibility Calculator</h2>
+      <div class="heart-container">
+        <div class="heart">❤️</div>
+        <div class="love-percentage" id="percentage">0%</div>
+      </div>
+      <div id="result">Masukkan tanggal lahir untuk melihat kecocokan!</div>
+      <form id="love-calculator">
+        <label for="your-birthday">Tanggal Lahir Kamu:</label>
+        <input type="date" id="your-birthday" name="your-birthday" required />
+
+        <label for="partner-birthday">Tanggal Lahir Pasangan:</label>
+        <input
+          type="date"
+          id="partner-birthday"
+          name="partner-birthday"
+          required
+        />
+
+        <button type="button" id="calculate-button">Hitung</button>
+      </form>
+    </div>
+
+    <div id="contact" class="contact">
+      <h2>Best Wishes</h2>
+      <img src="image/image5.jpg" alt="Best Wishes Image" />
+      <p>Sampaikan pesan dan kesan terbaik kamu yaa!</p>
+
+      <!-- Form untuk mengirim komentar -->
+      <form id="comment-form">
+        <input type="text" id="name" placeholder="Nama" required />
+        <textarea id="message" placeholder="Ucapan" required></textarea>
+        <button type="submit" id="submit-comment">Kirim</button>
+      </form>
+
+      <div id="comment-section">
+        <div class="comment-total">
+          Total Comments: <span id="total-comments">0</span>
+        </div>
+        <div id="comments-section" class="comment-container">
+          <!-- Komentar individual akan ditambahkan di sini -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div id="social-links">
+      <!-- Email -->
+      <a
+        href="mailto:nurulhidayatulatika@gmail.com"
+        target="_blank"
+        class="social-icon email"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/nrlka._/"
+        target="_blank"
+        class="social-icon instagram"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- Facebook -->
+      <a
+        href="https://www.facebook.com/dikimulyapermadi.dikimulyapermadi.3?mibextid=kFxxJD"
+        target="_blank"
+        class="social-icon facebook"
+        aria-label="Facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <!-- Twitter -->
+      <a
+        href="https://twitter.com/just_peopleeeee"
+        target="_blank"
+        class="social-icon twitter"
+        aria-label="Twitter"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+
+    <footer>&copy; 2025 A Chapter of Us❤️.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

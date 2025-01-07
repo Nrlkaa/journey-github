@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Journey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0; /* To ensure no unintended spacing */
+      }
+
+      html,
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: white;
+      }
+
+      .slider {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        animation: slide 12s infinite;
+        opacity: 0;
+      }
+
+      .slider img:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .slider img:nth-child(2) {
+        animation-delay: 4s;
+      }
+
+      .slider img:nth-child(3) {
+        animation-delay: 8s;
+      }
+
+      @keyframes slide {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        33% {
+          opacity: 1;
+        }
+      }
+
+      .home-content {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+        padding: 20px;
+      }
+
+      .home-content h1 {
+        font-size: 4rem;
+        font-family: "Great Vibes", cursive;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+          -2px -2px 4px rgba(255, 255, 255, 0.2);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
+
+      .home-content h1:hover {
+        transform: scale(1.1);
+      }
+
+      .home-content p {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        margin-bottom: 30px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .home-content a {
+        text-decoration: none;
+        background: linear-gradient(90deg, #ff6f61, #e9594c);
+        color: white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.3s ease,
+          box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 111, 97, 0.5);
+        display: inline-block;
+      }
+
+      .home-content a:hover {
+        background: linear-gradient(90deg, #e9594c, #c0392b);
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(255, 111, 97, 0.7);
+      }
+
+      @media (max-width: 768px) {
+        .home-content h1 {
+          font-size: 3rem;
+        }
+        .home-content p {
+          font-size: 1.2rem;
+        }
+        .home-content a {
+          padding: 10px 20px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .home-content h1 {
+          font-size: 2.5rem;
+        }
+        .home-content p {
+          font-size: 1.2rem;
+        }
+        .home-content a {
+          padding: 8px 16px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="home" class="home">
+      <div class="slider">
+        <img src="image/image1.jpg" alt="Slide 1" />
+        <img src="image/image2.jpg" alt="Slide 2" />
+        <img src="image/image3.jpg" alt="Slide 3" />
+      </div>
+      <div class="home-content">
+        <h1>Hello</h1>
+        <p>Welcome to Our Story</p>
+        <a href="about.html" class="link-button">See More</a>
+      </div>
+    </section>
+  </body>
+</html>
